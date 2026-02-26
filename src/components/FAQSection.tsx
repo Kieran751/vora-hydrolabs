@@ -51,7 +51,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       >
         <span
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontWeight: 500,
             fontSize: '1rem',
             color: '#F5F7F8',
@@ -62,7 +62,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         </span>
         <span
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontWeight: 400,
             fontSize: '1.25rem',
             color: '#00F2FF',
@@ -122,7 +122,7 @@ export default function FAQSection() {
           transition={{ duration: 0.65, ease: [0.4, 0, 0.2, 1] }}
           viewport={{ once: true, margin: '-80px' }}
           style={{
-            fontFamily: "'Syne', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontWeight: 700,
             fontSize: 'clamp(1.875rem, 4vw, 3rem)',
             letterSpacing: '-0.02em',

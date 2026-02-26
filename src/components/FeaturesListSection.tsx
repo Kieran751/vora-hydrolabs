@@ -46,7 +46,7 @@ export default function FeaturesListSection() {
         >
           <h2
             style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               fontWeight: 700,
               fontSize: 'clamp(1.875rem, 4vw, 3rem)',
               letterSpacing: '-0.02em',
@@ -99,7 +99,7 @@ export default function FeaturesListSection() {
                 <div>
                   <p
                     style={{
-                      fontFamily: "'Space Grotesk', sans-serif",
+                      fontFamily: "'Inter', sans-serif",
                       fontWeight: 500,
                       fontSize: '1rem',
                       color: '#F5F7F8',

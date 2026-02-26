@@ -60,7 +60,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 fontWeight: 500,
                 fontSize: '0.8125rem',
                 textTransform: 'uppercase',

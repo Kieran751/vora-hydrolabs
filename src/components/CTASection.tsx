@@ -24,7 +24,7 @@ export default function CTASection() {
         >
           <h2
             style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               fontWeight: 800,
               fontSize: 'clamp(2rem, 5vw, 3.5rem)',
               letterSpacing: '-0.02em',
@@ -65,7 +65,7 @@ export default function CTASection() {
                 display: 'inline-block',
                 background: '#00F2FF',
                 color: '#0D0F12',
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 fontWeight: 600,
                 fontSize: '0.875rem',
                 textTransform: 'uppercase',
@@ -92,7 +92,7 @@ export default function CTASection() {
                 display: 'inline-block',
                 background: 'transparent',
                 color: '#00F2FF',
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 fontWeight: 600,
                 fontSize: '0.875rem',
                 textTransform: 'uppercase',

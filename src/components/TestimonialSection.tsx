@@ -37,7 +37,7 @@ export default function TestimonialSection() {
           transition={{ duration: 0.65, ease: [0.4, 0, 0.2, 1] }}
           viewport={{ once: true, margin: '-80px' }}
           style={{
-            fontFamily: "'Syne', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontWeight: 700,
             fontSize: 'clamp(1.875rem, 4vw, 3rem)',
             letterSpacing: '-0.02em',
@@ -94,7 +94,7 @@ export default function TestimonialSection() {
               <div>
                 <p
                   style={{
-                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontFamily: "'Inter', sans-serif",
                     fontWeight: 600,
                     fontSize: '0.9375rem',
                     color: '#F5F7F8',

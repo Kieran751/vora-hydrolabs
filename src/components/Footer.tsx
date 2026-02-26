@@ -46,7 +46,7 @@ export default function Footer() {
                 key={link.label}
                 href={link.href}
                 style={{
-                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   fontWeight: 500,
                   fontSize: '0.8125rem',
                   textTransform: 'uppercase',
@@ -69,7 +69,7 @@ export default function Footer() {
               display: 'inline-block',
               background: '#00F2FF',
               color: '#0D0F12',
-              fontFamily: "'Space Grotesk', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               fontWeight: 600,
               fontSize: '0.8125rem',
               textTransform: 'uppercase',

@@ -36,20 +36,8 @@ a {
   color: inherit;
 }
 
-.font-syne {
-  font-family: 'Syne', sans-serif;
-}
-
-.font-space {
-  font-family: 'Space Grotesk', sans-serif;
-}
-
-.font-inter {
-  font-family: 'Inter', sans-serif;
-}
-
 .font-mono-data {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Inter', sans-serif;
   font-variant-numeric: tabular-nums;
 }
 

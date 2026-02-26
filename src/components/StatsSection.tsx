@@ -84,7 +84,7 @@ export default function StatsSection() {
           transition={{ duration: 0.65, ease: [0.4, 0, 0.2, 1] }}
           viewport={{ once: true, margin: '-80px' }}
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontWeight: 600,
             fontSize: '0.75rem',
             textTransform: 'uppercase',
@@ -131,7 +131,7 @@ export default function StatsSection() {
             >
               <p
                 style={{
-                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   fontWeight: 500,
                   fontSize: '0.6875rem',
                   textTransform: 'uppercase',
@@ -143,7 +143,7 @@ export default function StatsSection() {
               </p>
               <p
                 style={{
-                  fontFamily: "'JetBrains Mono', monospace",
+                  fontFamily: "'Inter', sans-serif",
                   fontVariantNumeric: 'tabular-nums',
                   fontWeight: 400,
                   fontSize: 'clamp(1.75rem, 3vw, 2.25rem)',

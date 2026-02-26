@@ -88,7 +88,7 @@ export default function FeatureSection() {
           <div>
             <h2
               style={{
-                fontFamily: "'Syne', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 fontWeight: 700,
                 fontSize: 'clamp(2rem, 4vw, 3.25rem)',
                 letterSpacing: '-0.02em',
@@ -177,7 +177,7 @@ export default function FeatureSection() {
 
               <h3
                 style={{
-                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   fontWeight: 600,
                   fontSize: '1.0625rem',
                   color: '#F5F7F8',
