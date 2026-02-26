@@ -1,16 +1,29 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import logo from '../assets/Google Gemini Generated Image.png'
 
+const MotionLink = motion(Link)
+
 const navLinks = [
-  { label: 'Systems', href: '/modular-story' },
-  { label: 'Science', href: '#features' },
-  { label: 'Configurator', href: '/configurator' },
-  { label: 'Vora OS', href: '/vora-os' },
+  { label: 'Systems', href: '/modular-story', internal: true },
+  { label: 'Science', href: '#features', internal: false },
+  { label: 'Configurator', href: '/configurator', internal: true },
+  { label: 'Vora OS', href: '/vora-os', internal: true },
 ]
 
+const linkStyle = {
+  fontFamily: "'Inter', sans-serif",
+  fontWeight: 500,
+  fontSize: '0.8125rem',
+  textTransform: 'uppercase' as const,
+  letterSpacing: '0.08em',
+  color: 'rgba(245,247,248,0.75)' as const,
+  textDecoration: 'none',
+}
+
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [_menuOpen, setMenuOpen] = useState(false)
 
   return (
     <nav
@@ -38,48 +51,51 @@ export default function Navbar() {
         }}
       >
         {/* Logo */}
-        <a href="/">
+        <MotionLink
+          to="/"
+          style={{ display: 'block', lineHeight: 0 }}
+        >
           <img
             src={logo}
             alt="Vora Hydrolabs"
             style={{ height: '36px', width: 'auto', display: 'block' }}
           />
-        </a>
+        </MotionLink>
 
         {/* Desktop Nav Links */}
         <div
-          style={{
-            display: 'flex',
-            gap: '2.5rem',
-            alignItems: 'center',
-          }}
+          style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}
           className="hidden-mobile"
         >
-          {navLinks.map((link) => (
-            <motion.a
-              key={link.label}
-              href={link.href}
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                fontWeight: 500,
-                fontSize: '0.8125rem',
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                color: 'rgba(245,247,248,0.75)',
-                textDecoration: 'none',
-              }}
-              whileHover={{ color: '#00F2FF' }}
-              transition={{ duration: 0.2, ease: 'easeOut' }}
-            >
-              {link.label}
-            </motion.a>
-          ))}
+          {navLinks.map((link) =>
+            link.internal ? (
+              <MotionLink
+                key={link.label}
+                to={link.href}
+                style={linkStyle}
+                whileHover={{ color: '#00F2FF' }}
+                transition={{ duration: 0.2, ease: 'easeOut' }}
+              >
+                {link.label}
+              </MotionLink>
+            ) : (
+              <motion.a
+                key={link.label}
+                href={link.href}
+                style={linkStyle}
+                whileHover={{ color: '#00F2FF' }}
+                transition={{ duration: 0.2, ease: 'easeOut' }}
+              >
+                {link.label}
+              </motion.a>
+            )
+          )}
         </div>
 
         {/* Mobile Hamburger */}
         <button
           className="show-mobile"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setMenuOpen((v) => !v)}
           style={{
             background: 'none',
             border: 'none',
